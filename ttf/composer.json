@@ -22,7 +22,12 @@
         "ozerich/yii2-filestorage-db": "*",
         "x000000/storage-manager": "^0.3.2",
         "claudejanz/yii2-file-behavior": "*",
-        "floor12/yii2-notification": "^1.3"
+        "floor12/yii2-notification": "^1.3",
+        "diazoxide/yii2-infinite-scroll": "dev-master",
+        "sunhater/kcfinder": "dev-master",
+        "2amigos/yii2-ckeditor-widget": "dev-master",
+        "kartik-v/yii2-widget-datetimepicker": "dev-master",
+        "chriskonnertz/bbcode": "dev-master"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.1.0",
