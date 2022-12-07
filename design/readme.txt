@@ -1,0 +1,1 @@
+Los diseños realizados van en este directorio
