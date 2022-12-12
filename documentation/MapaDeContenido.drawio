@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="xX8tvpBelQaRzRdg0BwZ" name="MapaContenido">
-        <mxGraphModel dx="1042" dy="618" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+        <mxGraphModel dx="1093" dy="618" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
             <root>
                 <mxCell id="eNKYxBsOCk_GWGlPTTgq-0"/>
                 <mxCell id="eNKYxBsOCk_GWGlPTTgq-1" parent="eNKYxBsOCk_GWGlPTTgq-0"/>
@@ -429,8 +429,8 @@
                 <mxCell id="eNKYxBsOCk_GWGlPTTgq-169" style="edgeStyle=none;html=1;startArrow=none;startFill=0;endArrow=open;endFill=0;sourcePerimeterSpacing=0;" parent="eNKYxBsOCk_GWGlPTTgq-1" source="eNKYxBsOCk_GWGlPTTgq-166" target="eNKYxBsOCk_GWGlPTTgq-168" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="eNKYxBsOCk_GWGlPTTgq-171" value="- Nombre&lt;br&gt;- Apellido&lt;br&gt;- Correo&lt;br&gt;- Dirección&lt;br&gt;- Teléfono&lt;br&gt;- Foto de perfil" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="eNKYxBsOCk_GWGlPTTgq-1" vertex="1">
-                    <mxGeometry x="1950" y="880" width="120" height="100" as="geometry"/>
+                <mxCell id="eNKYxBsOCk_GWGlPTTgq-171" value="- ID-Unico&lt;br&gt;- Nombre&lt;br&gt;- Apellido&lt;br&gt;- Correo&lt;br&gt;- Dirección&lt;br&gt;- Teléfono&lt;br&gt;- Foto de perfil" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="eNKYxBsOCk_GWGlPTTgq-1" vertex="1">
+                    <mxGeometry x="1950" y="880" width="120" height="110" as="geometry"/>
                 </mxCell>
                 <mxCell id="eNKYxBsOCk_GWGlPTTgq-174" style="edgeStyle=none;html=1;startArrow=none;startFill=0;endArrow=open;endFill=0;sourcePerimeterSpacing=0;" parent="eNKYxBsOCk_GWGlPTTgq-1" source="eNKYxBsOCk_GWGlPTTgq-172" target="eNKYxBsOCk_GWGlPTTgq-2" edge="1">
                     <mxGeometry relative="1" as="geometry">
