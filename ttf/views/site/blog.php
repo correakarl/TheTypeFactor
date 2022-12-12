@@ -2,12 +2,12 @@
 
 /** @var yii\web\View $this */
 
-$this->title = 'Dashboard';
+$this->title = 'Blog';
 ?>
-<div class="site-dashboard">
+<div class="site-blog">
 
     <div class="jumbotron text-center bg-transparent">
-        <h1 class="display-4">DASHBOARD TYPEFACTOR</h1>
+        <h1 class="display-4">Blog TYPEFACTOR</h1>
     </div>
 
     
