@@ -2,12 +2,12 @@
 
 /** @var yii\web\View $this */
 
-$this->title = 'Type Factor';
+$this->title = 'Dashboard';
 ?>
 <div class="site-index">
 
     <div class="jumbotron text-center bg-transparent">
-        <h1 class="display-4">HOMEPAGE TYPEFACTOR</h1>
+        <h1 class="display-4">DASHBOARD TYPEFACTOR</h1>
     </div>
 
     
