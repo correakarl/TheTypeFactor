@@ -10,5 +10,9 @@ $this->title = 'Type Factor';
         <h1 class="display-4">HOMEPAGE TYPEFACTOR</h1>
     </div>
 
+    <div class="image-prueba">
+        <img src="" alt="">
+    </div>
+
     
 </div>
