@@ -77,7 +77,7 @@ class SiteController extends Controller
 
         $model = new LoginForm();
         if ($model->load(Yii::$app->request->post()) && $model->login()) {
-            return $this->goBack();
+            return $this->render('dashboard');
         }
 
         $model->password = '';
@@ -124,5 +124,25 @@ class SiteController extends Controller
     public function actionAbout()
     {
         return $this->render('about');
+    }
+
+    /**
+     * Displays services page.
+     *
+     * @return string
+     */
+    public function actionServices()
+    {
+        return $this->render('services');
+    }
+
+    /**
+     * Displays blog page.
+     *
+     * @return string
+     */
+    public function actionBlog()
+    {
+        return $this->render('blog');
     }
 }
