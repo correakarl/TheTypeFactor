@@ -1,0 +1,16 @@
+footer .footer-bottom
+{
+    background-color: #000;
+    color: #fff;
+}
+
+footer .footer-bottom ul
+{
+    list-style: none;
+    display: flex;
+}
+
+footer .footer-bottom ul li a
+{
+    text-decoration: none;
+}

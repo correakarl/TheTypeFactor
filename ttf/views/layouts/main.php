@@ -36,7 +36,7 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
             <?php
             NavBar::begin([
                 'brandUrl' => Yii::$app->homeUrl,
-                'options' => ['class' => 'navbar-expand-md']
+                'options' => ['class' => 'navbar-expand-md nav-typefactor']
             ]);
             echo Nav::widget([
                 'options' => ['class' => 'navbar-nav'],
@@ -52,7 +52,7 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
                             . Html::beginForm(['/site/logout'])
                             . Html::submitButton(
                                 'Logout (' . Yii::$app->user->identity->username . ')',
-                                ['class' => 'nav-link btn btn-link logout']
+                                ['class' => 'nav-link btn btn-link logout btn-dark']
                             )
                             . Html::endForm()
                             . '</li>'
@@ -66,7 +66,7 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
 </header>
 
 <main id="main" class="flex-shrink-0" role="main">
-    <div class="container">
+    <div class="">
         <?php if (!empty($this->params['breadcrumbs'])): ?>
             <?= Breadcrumbs::widget(['links' => $this->params['breadcrumbs']]) ?>
         <?php endif ?>
@@ -75,13 +75,19 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
     </div>
 </main>
 
-<footer id="footer" class="mt-auto py-3 bg-light">
-    <div class="container">
-        <div class="row text-muted">
-            <div class="col-md-6 text-center text-md-start">&copy; My Company <?= date('Y') ?></div>
-            <div class="col-md-6 text-center text-md-end"><?= Yii::powered() ?></div>
+<footer id="footer" class="">
+    <section class="footer-links">
+        <div class="primary-row">
+
         </div>
-    </div>
+    </section>
+    <section class="footer-bottom">
+        <ul>
+            <li><a href="#">Términos y condiciones</a></li>
+            <li><a href="#">Políticas de privacidad</a></li>
+        </ul>
+        <p>Copyright©2022</p>
+    </section>
 </footer>
 
 <?php $this->endBody() ?>

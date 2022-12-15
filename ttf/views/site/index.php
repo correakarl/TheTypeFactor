@@ -6,13 +6,39 @@ $this->title = 'Type Factor';
 ?>
 <div class="site-index">
 
-    <div class="jumbotron text-center bg-transparent">
-        <h1 class="display-4">HOMEPAGE TYPEFACTOR</h1>
-    </div>
+    <section class="banner-index">
+        <div class="row-primary">
+            <div class="banner-about">
+                <h1>Type Factor</h1>
+                <button><a href="#">Hire Us</a></button>
+            </div>
 
-    <div class="image-prueba">
-        <img src="" alt="">
-    </div>
+            <div class="about-bar">
+                <ul>
+                    <li><a href="#">An Easy Process</a></li>
+                    <li><a href="#">The Best Value</a></li>
+                    <li><a href="#">Griefling & Heading</a></li>
+                    <li><a href="#">PreArragaments</a></li>
+                </ul>
+            </div>
+            
+        </div>
+    </section>
 
+    <section class="solutions-index">
+
+    </section>
+
+    <section class="logos">
+
+    </section>
+
+    <section class="testimonials-index">
+
+    </section>
+
+    <section class="sevices-index">
+        
+    </section>
     
 </div>
