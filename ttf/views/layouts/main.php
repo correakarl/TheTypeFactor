@@ -29,35 +29,40 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
 <body class="d-flex flex-column h-100">
 <?php $this->beginBody() ?>
 
-<header id="header">
-    <img src="" alt="Type Factor Logo">
-    <?php
-    NavBar::begin([
-        'brandUrl' => Yii::$app->homeUrl,
-        'options' => ['class' => 'navbar-expand-md navbar-dark bg-dark fixed-top']
-    ]);
-    echo Nav::widget([
-        'options' => ['class' => 'navbar-nav'],
-        'items' => [
-            ['label' => 'Home', 'url' => ['/site/index']],
-            ['label' => 'Nosotros', 'url' => ['/site/about']],
-            ['label' => 'Contacto', 'url' => ['/site/contact']],
-            ['label' => 'Servicios', 'url' => ['/site/services']],
-            ['label' => 'Blog', 'url' => ['/site/blog']],
-            Yii::$app->user->isGuest
-                ? ['label' => 'Login', 'url' => ['/site/login']]
-                : '<li class="nav-item">'
-                    . Html::beginForm(['/site/logout'])
-                    . Html::submitButton(
-                        'Logout (' . Yii::$app->user->identity->username . ')',
-                        ['class' => 'nav-link btn btn-link logout']
-                    )
-                    . Html::endForm()
-                    . '</li>'
-        ]
-    ]);
-    NavBar::end();
-    ?>
+<header class="fixed-top" id="header" style="">
+    <section class="section-primary">
+        <div class="row-primary">
+            <?= Html::img('@web/images/logo.png', ['alt' => 'My logo', 'class'=> '']) ?>
+            <?php
+            NavBar::begin([
+                'brandUrl' => Yii::$app->homeUrl,
+                'options' => ['class' => 'navbar-expand-md']
+            ]);
+            echo Nav::widget([
+                'options' => ['class' => 'navbar-nav'],
+                'items' => [
+                    ['label' => 'Home', 'url' => ['/site/index']],
+                    ['label' => 'Nosotros', 'url' => ['/site/about']],
+                    ['label' => 'Contacto', 'url' => ['/site/contact']],
+                    ['label' => 'Servicios', 'url' => ['/site/services']],
+                    ['label' => 'Blog', 'url' => ['/site/blog']],
+                    Yii::$app->user->isGuest
+                        ? ['label' => 'Login', 'url' => ['/site/login']]
+                        : '<li class="nav-item">'
+                            . Html::beginForm(['/site/logout'])
+                            . Html::submitButton(
+                                'Logout (' . Yii::$app->user->identity->username . ')',
+                                ['class' => 'nav-link btn btn-link logout']
+                            )
+                            . Html::endForm()
+                            . '</li>'
+                ]
+            ]);
+            NavBar::end();
+            ?>
+        </div>
+    </section>
+    
 </header>
 
 <main id="main" class="flex-shrink-0" role="main">
