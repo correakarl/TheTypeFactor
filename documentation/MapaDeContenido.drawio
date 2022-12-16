@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="xX8tvpBelQaRzRdg0BwZ" name="MapaContenido">
-        <mxGraphModel dx="1896" dy="1373" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+        <mxGraphModel dx="1066" dy="773" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
             <root>
                 <mxCell id="eNKYxBsOCk_GWGlPTTgq-0"/>
                 <mxCell id="eNKYxBsOCk_GWGlPTTgq-1" parent="eNKYxBsOCk_GWGlPTTgq-0"/>
@@ -1072,6 +1072,9 @@
                 </mxCell>
                 <mxCell id="124" value="Crear curso" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="eNKYxBsOCk_GWGlPTTgq-1">
                     <mxGeometry x="740" y="1400" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="126" value="- Entrada de formulario" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="eNKYxBsOCk_GWGlPTTgq-1">
+                    <mxGeometry x="1600" y="2440" width="120" height="30" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
