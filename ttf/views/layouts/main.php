@@ -23,6 +23,7 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
 <!DOCTYPE html>
 <html lang="<?= Yii::$app->language ?>" class="h-100">
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
 </head>
@@ -77,16 +78,53 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
 
 <footer id="footer" class="">
     <section class="footer-links">
-        <div class="primary-row">
-
+        <div class="row-primary">
+            <div class="footer-socials">
+                <h2>Contacto</h2>
+                <div class="contact-instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                    <a href="#">@THETYFACTOR_</a>
+                </div>
+                <div class="contact-whatsapp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <a href="#">@+58 424-1425367</a>
+                </div>
+                <div class="contact-facebook">
+                    <i class="fa-brands fa-facebook"></i>
+                    <a href="#">@THETYFACTOR</a>
+                </div>
+            </div>
+            <div class="footer-links1">
+                <h3>servicios</h3>
+                <a href="#">Lorem ipsum</a>
+                <a href="#">Lorem ipsum</a>
+            </div>
+            <div class="footer-links2">
+                <h3>Links</h3>
+                <a href="#">Lorem ipsum</a>
+                <a href="#">Lorem ipsum</a>
+            </div>
+            <div class="footer-links3">
+                <h3>Nosotros</h3>
+                <a href="#">Lorem ipsum</a>
+                <a href="#">Lorem ipsum</a>
+            </div>
+            <div class="footer-links4">
+                <h3>Blog</h3>
+                <a href="#">Lorem ipsum</a>
+                <a href="#">Lorem ipsum</a>
+            </div>
+            <p class="footer-links-copy"><i class="fa-solid fa-circle"></i>¿como contratas nuestro servicio?</p>
         </div>
     </section>
     <section class="footer-bottom">
-        <ul>
-            <li><a href="#">Términos y condiciones</a></li>
-            <li><a href="#">Políticas de privacidad</a></li>
-        </ul>
-        <p>Copyright©2022</p>
+        <div class="row-primary">
+            <ul>
+                <li><a href="#">Términos y condiciones</a></li>
+                <li><a href="#">Políticas de privacidad</a></li>
+            </ul>
+            <p>Copyright©2022</p>
+        </div>
     </section>
 </footer>
 
