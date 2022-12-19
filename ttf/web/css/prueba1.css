@@ -24,6 +24,11 @@ a
     margin: auto;
 }
 
+header
+{
+    background-color: #fff;
+}
+
 header .row-primary
 {
     display: flex;

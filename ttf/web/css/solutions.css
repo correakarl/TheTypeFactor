@@ -1,0 +1,4 @@
+.solutions-index .row-primary:nth-child(3)
+{
+    display: flex;
+}

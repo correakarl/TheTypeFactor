@@ -1,0 +1,4 @@
+.sevices-index .row-primary:nth-child(2)
+{
+    display: flex;
+}
