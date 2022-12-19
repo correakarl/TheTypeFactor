@@ -42,7 +42,6 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
             echo Nav::widget([
                 'options' => ['class' => 'navbar-nav'],
                 'items' => [
-                    ['label' => 'Home', 'url' => ['/site/index']],
                     ['label' => 'Nosotros', 'url' => ['/site/about']],
                     ['label' => 'Contacto', 'url' => ['/site/contact']],
                     ['label' => 'Servicios', 'url' => ['/site/services']],
@@ -52,7 +51,7 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
                         : '<li class="nav-item">'
                             . Html::beginForm(['/site/logout'])
                             . Html::submitButton(
-                                'Logout (' . Yii::$app->user->identity->username . ')',
+                                'Logout',
                                 ['class' => 'nav-link btn btn-link logout btn-dark']
                             )
                             . Html::endForm()
@@ -78,6 +77,12 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
 
 <footer id="footer" class="">
     <section class="footer-links">
+        <div class="footer-back3">    
+        </div>
+        <div class="footer-back1">
+        </div>
+        <div class="footer-back2">    
+        </div>
         <div class="row-primary">
             <div class="footer-socials">
                 <h2>Contacto</h2>
