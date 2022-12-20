@@ -12,6 +12,11 @@ a
     text-decoration: none;
 }
 
+.main-content
+{
+    padding-top: 58px;
+}
+
 .section-primary
 {
     width: 100%;

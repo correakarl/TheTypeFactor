@@ -66,11 +66,14 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
 </header>
 
 <main id="main" class="flex-shrink-0" role="main">
-    <div class="">
-        <?php if (!empty($this->params['breadcrumbs'])): ?>
-            <?= Breadcrumbs::widget(['links' => $this->params['breadcrumbs']]) ?>
-        <?php endif ?>
-        <?= Alert::widget() ?>
+    <div class="main-content">
+        <div class="row-primary">
+            <?php if (!empty($this->params['breadcrumbs'])): ?>
+                <?= Breadcrumbs::widget(['links' => $this->params['breadcrumbs']]) ?>
+            <?php endif ?>
+            <?= Alert::widget() ?>
+        </div>
+        
         <?= $content ?>
     </div>
 </main>
@@ -101,23 +104,20 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
             </div>
             <div class="footer-links1">
                 <h3>servicios</h3>
-                <a href="#">Lorem ipsum</a>
-                <a href="#">Lorem ipsum</a>
+
+
             </div>
             <div class="footer-links2">
                 <h3>Links</h3>
-                <a href="#">Lorem ipsum</a>
-                <a href="#">Lorem ipsum</a>
+
             </div>
             <div class="footer-links3">
                 <h3>Nosotros</h3>
-                <a href="#">Lorem ipsum</a>
-                <a href="#">Lorem ipsum</a>
+
             </div>
             <div class="footer-links4">
                 <h3>Blog</h3>
-                <a href="#">Lorem ipsum</a>
-                <a href="#">Lorem ipsum</a>
+
             </div>
             <p class="footer-links-copy"><i class="fa-solid fa-circle"></i>¿como contratas nuestro servicio?</p>
         </div>

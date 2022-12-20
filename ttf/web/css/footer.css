@@ -50,7 +50,7 @@ footer .footer-links .footer-socials
     grid-area: contact;
     background-color: #008da373;
     border-radius: 20px;
-    padding: 20px 35px;
+    padding: 20px 65px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -58,10 +58,34 @@ footer .footer-links .footer-socials
 
 footer .footer-links .footer-socials h2
 {
-    background-color: #fff;
+    background-color: #ffffff;
+    color: #008ca2;
     border-radius: 15px;
     text-align: center;
     width: 100%;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+footer .footer-links .footer-socials div
+{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+footer .footer-links .footer-socials i
+{
+    font-size: 70px;
+    color: #fff;
+}
+
+footer .footer-links .footer-socials a
+{
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 700;
 }
 
 footer .footer-links .footer-links1
@@ -102,6 +126,7 @@ footer .footer-links .footer-links-copy
     border-radius: 12px;
     padding: 0px 10px;
     font-size: 20px;
+    height: 35px;
 }
 
 footer .footer-links .footer-links-copy i
