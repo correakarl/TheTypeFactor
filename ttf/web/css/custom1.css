@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box !important;
+    
 }
 
 ul
@@ -15,6 +16,7 @@ a
 .main-content
 {
     padding-top: 58px;
+    position: relative;
 }
 
 .section-primary

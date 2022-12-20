@@ -30,10 +30,12 @@ class AppAsset extends AssetBundle
         'css/home/clients.css',
         'css/home/testimonials.css',
         'css/home/services.css',
+        'css/auth/auth.css',
         
     ];
     public $js = [
-        'js/main.js'
+        'js/main.js',
+        'js/tabs.js'
     ];
     public $depends = [
         'yii\web\YiiAsset',
