@@ -23,60 +23,114 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
 <!DOCTYPE html>
 <html lang="<?= Yii::$app->language ?>" class="h-100">
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
 </head>
 <body class="d-flex flex-column h-100">
 <?php $this->beginBody() ?>
 
-<header id="header">
-    <img src="" alt="Type Factor Logo">
-    <?php
-    NavBar::begin([
-        'brandUrl' => Yii::$app->homeUrl,
-        'options' => ['class' => 'navbar-expand-md navbar-dark bg-dark fixed-top']
-    ]);
-    echo Nav::widget([
-        'options' => ['class' => 'navbar-nav'],
-        'items' => [
-            ['label' => 'Home', 'url' => ['/site/index']],
-            ['label' => 'Nosotros', 'url' => ['/site/about']],
-            ['label' => 'Contacto', 'url' => ['/site/contact']],
-            ['label' => 'Servicios', 'url' => ['/site/services']],
-            ['label' => 'Blog', 'url' => ['/site/blog']],
-            Yii::$app->user->isGuest
-                ? ['label' => 'Login', 'url' => ['/site/login']]
-                : '<li class="nav-item">'
-                    . Html::beginForm(['/site/logout'])
-                    . Html::submitButton(
-                        'Logout (' . Yii::$app->user->identity->username . ')',
-                        ['class' => 'nav-link btn btn-link logout']
-                    )
-                    . Html::endForm()
-                    . '</li>'
-        ]
-    ]);
-    NavBar::end();
-    ?>
+<header class="fixed-top" id="header" style="">
+    <section class="section-primary">
+        <div class="row-primary">
+            <?= Html::img('@web/images/logo.png', ['alt' => 'My logo', 'class'=> '']) ?>
+            <?php
+            NavBar::begin([
+                'brandUrl' => Yii::$app->homeUrl,
+                'options' => ['class' => 'navbar-expand-md nav-typefactor']
+            ]);
+            echo Nav::widget([
+                'options' => ['class' => 'navbar-nav'],
+                'items' => [
+                    ['label' => 'Nosotros', 'url' => ['/site/about']],
+                    ['label' => 'Contacto', 'url' => ['/site/contact']],
+                    ['label' => 'Servicios', 'url' => ['/site/services']],
+                    ['label' => 'Blog', 'url' => ['/site/blog']],
+                    Yii::$app->user->isGuest
+                        ? ['label' => 'Login', 'url' => ['/site/login']]
+                        : '<li class="nav-item">'
+                            . Html::beginForm(['/site/logout'])
+                            . Html::submitButton(
+                                'Logout',
+                                ['class' => 'nav-link btn btn-link logout btn-dark']
+                            )
+                            . Html::endForm()
+                            . '</li>'
+                ]
+            ]);
+            NavBar::end();
+            ?>
+        </div>
+    </section>
+    
 </header>
 
 <main id="main" class="flex-shrink-0" role="main">
-    <div class="container">
-        <?php if (!empty($this->params['breadcrumbs'])): ?>
-            <?= Breadcrumbs::widget(['links' => $this->params['breadcrumbs']]) ?>
-        <?php endif ?>
-        <?= Alert::widget() ?>
+    <div class="main-content">
+        <div class="row-primary">
+            <?php if (!empty($this->params['breadcrumbs'])): ?>
+                <?= Breadcrumbs::widget(['links' => $this->params['breadcrumbs']]) ?>
+            <?php endif ?>
+            <?= Alert::widget() ?>
+        </div>
+        
         <?= $content ?>
     </div>
 </main>
 
-<footer id="footer" class="mt-auto py-3 bg-light">
-    <div class="container">
-        <div class="row text-muted">
-            <div class="col-md-6 text-center text-md-start">&copy; My Company <?= date('Y') ?></div>
-            <div class="col-md-6 text-center text-md-end"><?= Yii::powered() ?></div>
+<footer id="footer" class="">
+    <section class="footer-links">
+        <div class="footer-back3">    
         </div>
-    </div>
+        <div class="footer-back1">
+        </div>
+        <div class="footer-back2">    
+        </div>
+        <div class="row-primary">
+            <div class="footer-socials">
+                <h2>Contacto</h2>
+                <div class="contact-instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                    <a href="#">@THETYFACTOR_</a>
+                </div>
+                <div class="contact-whatsapp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <a href="#">@+58 424-1425367</a>
+                </div>
+                <div class="contact-facebook">
+                    <i class="fa-brands fa-facebook"></i>
+                    <a href="#">@THETYFACTOR</a>
+                </div>
+            </div>
+            <div class="footer-links1">
+                <h3>servicios</h3>
+
+
+            </div>
+            <div class="footer-links2">
+                <h3>Links</h3>
+
+            </div>
+            <div class="footer-links3">
+                <h3>Nosotros</h3>
+
+            </div>
+            <div class="footer-links4">
+                <h3>Blog</h3>
+
+            </div>
+            <p class="footer-links-copy"><i class="fa-solid fa-circle"></i>¿como contratas nuestro servicio?</p>
+        </div>
+    </section>
+    <section class="footer-bottom">
+        <div class="row-primary">
+            <ul>
+                <li><a href="#">Términos y condiciones</a></li>
+                <li><a href="#">Políticas de privacidad</a></li>
+            </ul>
+            <p>Copyright©2022</p>
+        </div>
+    </section>
 </footer>
 
 <?php $this->endBody() ?>
