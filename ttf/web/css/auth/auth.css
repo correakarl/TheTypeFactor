@@ -36,11 +36,6 @@
     justify-content: space-between;
 }
 
-.login-form form div.row
-{
-    --bs-gutter-x: none;
-}
-
 .login-form form i
 {
     float: left;
@@ -112,4 +107,37 @@
 .auth-box .show
 {
     opacity: 1 !important;
+}
+
+.login-form form div.row
+{
+    --bs-gutter-x: none;
+}
+
+.login-form form div.row > input
+{
+    border: 0px;
+    background: #008ca29e;
+    padding: 10px 5px;
+    border-radius: 10px;
+}
+
+.auth-box .login-form form div.row input:focus
+{
+    border: 2px solid #fff;
+}
+
+.form-btn-submit
+{
+    text-align: center;
+}
+
+.form-btn-submit button
+{
+    background: #008ca29e;
+    border-radius: 25px;
+    padding: 5px 30px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
 }

@@ -59,9 +59,9 @@ $this->params['breadcrumbs'][] = $this->title;
                     'template' => "<div class=\"custom-control custom-checkbox\">{input} {label}</div>\n<div class=\"\">{error}</div>",
                 ]) ?>
 
-                <div class="form-group">
-                    <div class="">
-                        <?= Html::submitButton('Login', ['class' => 'btn btn-primary', 'name' => 'login-button']) ?>
+                <div class="form-group ">
+                    <div class="form-btn-submit">
+                        <?= Html::submitButton('Ingresar', ['class' => 'btn auth-btn', 'name' => 'login-button']) ?>
                     </div>
                 </div>
 
@@ -69,7 +69,30 @@ $this->params['breadcrumbs'][] = $this->title;
         </div>
 
         <div id="cont2" class="register-form">
-            
+            <?php $form = ActiveForm::begin([
+            'id' => 'register-form',
+            'layout' => 'horizontal',
+            'fieldConfig' => [
+                'template' => "{input}\n{error}",
+                'inputOptions' => ['class' => 'auth-control'],
+                'errorOptions' => ['class' => 'col-lg-7 invalid-feedback'],
+            ],
+            ]); ?>
+                <?= $form->field($model, 'username')->textInput(['autofocus' => true]) ?>
+                
+                <?= $form->field($model, 'password')->passwordInput( ) ?>
+
+                <?= $form->field($model, 'rememberMe')->checkbox([
+                    'template' => "<div class=\"custom-control custom-checkbox\">{input} {label}</div>\n<div class=\"\">{error}</div>",
+                ]) ?>
+
+                <div class="form-group">
+                    <div class="form-btn-submit">
+                        <?= Html::submitButton('register', ['class' => 'btn auth-btn', 'name' => 'register-button']) ?>
+                    </div>
+                </div>
+
+            <?php ActiveForm::end(); ?>
         </div>
     </div>
 
