@@ -24,18 +24,3 @@ a
     margin: auto;
 }
 
-header
-{
-    background-color: #fff;
-}
-
-header .row-primary
-{
-    display: flex;
-    justify-content: space-between;
-}
-
-header .nav-typefactor ul li a
-{
-    color: #000;
-}

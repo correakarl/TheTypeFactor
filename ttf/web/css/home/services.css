@@ -1,0 +1,44 @@
+.services-index .services-title
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 25px;
+}
+
+.services-index .services-title h2
+{
+    color: #737373;
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.services-index .services-title .line-blue
+{ 
+    height: 6px;
+    width: 29%;
+    background-color: #008ca278;
+}
+
+.services-index .row-primary:nth-child(2)
+{
+    display: flex;
+}
+
+.services-index
+{
+    padding: 60px 0;
+}
+
+.services-index .row-primary:nth-child(2)
+{
+    margin-top: 60px;
+}
+
+.services-index .service-item
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
