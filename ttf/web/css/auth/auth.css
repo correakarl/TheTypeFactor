@@ -36,7 +36,8 @@
     justify-content: space-between;
 }
 
-.login-form form i
+.login-form form i,
+.login-form form svg
 {
     float: left;
     font-size: 30px; 

@@ -24,11 +24,11 @@ $this->params['breadcrumbs'][] = $this->title;
     <div class="auth-tabs">
         <div id="tabLog" class="login-tab show">
             <h3>Inicia Sesión</h3>
-            <button id="form1">></button>
+            <button id="form1"><i class="fa-solid fa-chevron-right"></i></button>
         </div>
         <div id="tabReg" class="register-tab">
             <h3>Registrate</h3>
-            <button id="form2"><</button>
+            <button id="form2"><i class="fa-solid fa-chevron-left"></i></button>
         </div>
     </div>
 
@@ -36,7 +36,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <div class="auth-forms">
         <div class="auth-icon">
-            <i class="fa-solid fa-door-closed"></i>
+            <i id="authDoor" class="fa-solid fa-door-closed"></i>
         </div>
         
         <div id="cont1" class="login-form active">
@@ -46,12 +46,12 @@ $this->params['breadcrumbs'][] = $this->title;
             'fieldConfig' => [
                 'template' => "{input}\n{error}",
                 
-                'inputOptions' => ['class' => 'auth-control'],
+                'inputOptions' => ['class' => 'auth-control auth-input-area'],
                 'errorOptions' => ['class' => 'col-lg-7 invalid-feedback'],
             ],
             ]); ?>
                 <i class="fa-solid fa-user"></i>
-                <?= $form->field($model, 'username')->textInput(['autofocus' => true]) ?>
+                <?= $form->field($model, 'username')->textInput( ) ?>
                 <i class="fa-solid fa-key"></i>
                 <?= $form->field($model, 'password')->passwordInput( ) ?>
 

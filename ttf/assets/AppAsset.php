@@ -32,12 +32,11 @@ class AppAsset extends AssetBundle
         'css/home/testimonials.css',
         'css/home/services.css',
         'css/auth/auth.css',
-        
     ];
     public $js = [
-        'libs/fontawesome-free-6/js/all.min.js',
         'js/main.js',
-        'js/tabs.js'
+        'js/tabs.js',
+        'js/authicon.js',
     ];
     public $depends = [
         'yii\web\YiiAsset',
