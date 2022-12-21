@@ -9,17 +9,17 @@ $this->params['breadcrumbs'][] = $this->title;
 <div class="sidebar close">
   <div class="logo-details">
     <i class='bx bx-chevron-right ttf-side-btn' ></i>
-    <i class='bx bxl-c-plus-plus ttf-side-log'></i>
-    <span class="logo_name">CodingLab</span>
+    <i class='fa-solid fa-house ttf-side-log'></i>
+    <span class="logo_name">Resume</span>
   </div>
   <ul class="nav-links">
     <li>
       <a href="#">
-        <i class='bx bx-grid-alt' ></i>
-        <span class="link_name">Dashboard</span>
+        <i class='fa-solid fa-sliders' ></i>
+        <span class="link_name">Estado de cuenta</span>
       </a>
       <ul class="sub-menu blank">
-        <li><a class="link_name" href="#">Category</a></li>
+        <li><a class="link_name" href="#">Estado de cuenta</a></li>
       </ul>
     </li>
     <li>
@@ -112,22 +112,17 @@ $this->params['breadcrumbs'][] = $this->title;
         <li><a class="link_name" href="#">Setting</a></li>
       </ul>
     </li>
-    <li>
-      <div class="profile-details">
-        <div class="profile-content">
-          <img src="image/profile.jpg" alt="profileImg">
-        </div>
-        <div class="name-job">
-          <div class="profile_name">Prem Shahi</div>
-          <div class="job">Web Desginer</div>
-        </div>
-        <i class='bx bx-log-out' ></i>
-      </div>
-    </li>
+    
   </ul>
 </div>
-<section class="home-section">
-  <div class="home-content">
-    <span class="text">Drop Down Sidebar</span>
+
+<section class="dashboard-section">
+  <div class="dashboard-content">
+    <div class="dashboard-title">
+      <p class="dashboard-head">Bienvenido<i class="fa-regular fa-hand"></i> </p>
+    </div>
+    <div class="dashboard-row">
+      <input type="text">
+    </div>
   </div>
 </section>
