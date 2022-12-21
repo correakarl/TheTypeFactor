@@ -20,6 +20,7 @@ class AppAsset extends AssetBundle
     public $basePath = '@webroot';
     public $baseUrl = '@web';
     public $css = [
+        'libs/fontawesome-free-6/css/all.min.css',
         'css/site.css',
         'css/custom1.css',
         'css/header.css',
@@ -34,6 +35,7 @@ class AppAsset extends AssetBundle
         
     ];
     public $js = [
+        'libs/fontawesome-free-6/js/all.min.js',
         'js/main.js',
         'js/tabs.js'
     ];
