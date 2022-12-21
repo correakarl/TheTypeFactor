@@ -32,11 +32,13 @@ class AppAsset extends AssetBundle
         'css/home/testimonials.css',
         'css/home/services.css',
         'css/auth/auth.css',
+        'css/dashboard/sidebar.css',
     ];
     public $js = [
         'js/main.js',
         'js/tabs.js',
         'js/authicon.js',
+        'js/sidebar.js',
     ];
     public $depends = [
         'yii\web\YiiAsset',

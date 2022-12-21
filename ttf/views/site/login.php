@@ -16,7 +16,7 @@ $this->params['breadcrumbs'][] = $this->title;
 <div class="site-login">
 
 <div class="row-primary auth-title" style="">
-    <h2>Bienvenido</h2>
+    <h2>Bienvenido</h2> <i class="fa-regular fa-hand"></i>
 </div>
 
 <div class="auth-box">
@@ -27,7 +27,7 @@ $this->params['breadcrumbs'][] = $this->title;
             <button id="form1"><i class="fa-solid fa-chevron-right"></i></button>
         </div>
         <div id="tabReg" class="register-tab">
-            <h3>Registrate</h3>
+            <h3>Regístrate</h3>
             <button id="form2"><i class="fa-solid fa-chevron-left"></i></button>
         </div>
     </div>
@@ -51,9 +51,9 @@ $this->params['breadcrumbs'][] = $this->title;
             ],
             ]); ?>
                 <i class="fa-solid fa-user"></i>
-                <?= $form->field($model, 'username')->textInput( ) ?>
+                <?= $form->field($model, 'username')->textInput(['autofocus' => true, 'placeholder' => 'Usuario o Email...']) ?>
                 <i class="fa-solid fa-key"></i>
-                <?= $form->field($model, 'password')->passwordInput( ) ?>
+                <?= $form->field($model, 'password')->passwordInput(['placeholder' => 'Contraseña...']) ?>
 
                 <?= $form->field($model, 'rememberMe')->checkbox([
                     'template' => "<div class=\"custom-control custom-checkbox\">{input} {label}</div>\n<div class=\"\">{error}</div>",
@@ -61,7 +61,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
                 <div class="form-group ">
                     <div class="form-btn-submit">
-                        <?= Html::submitButton('Ingresar', ['class' => 'btn auth-btn', 'name' => 'login-button']) ?>
+                        <?= Html::submitButton('Ingresar', ['class' => 'btn ttf-btn-primary', 'name' => 'login-button']) ?>
                     </div>
                 </div>
 
@@ -88,7 +88,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
                 <div class="form-group">
                     <div class="form-btn-submit">
-                        <?= Html::submitButton('register', ['class' => 'btn auth-btn', 'name' => 'register-button']) ?>
+                        <?= Html::submitButton('register', ['class' => 'btn ttf-btn-primary', 'name' => 'register-button']) ?>
                     </div>
                 </div>
 

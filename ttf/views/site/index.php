@@ -18,7 +18,7 @@ $this->title = 'Type Factor';
         <div class="row-primary">
             <div class="banner-about">
                 <h1>Type Factor</h1>
-                <button><a href="#">Hire Us</a></button>
+                <button class="ttf-btn-primary"><a href="#">Hire Us</a></button>
             </div>
 
             <div class="about-bar">

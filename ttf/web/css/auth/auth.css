@@ -6,7 +6,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: #9c9d9db5;
+    background: #9c9d9d;
 }
 
 .auth-box
@@ -27,7 +27,16 @@
 {
     text-align: center;
     color: #fff;
-    margin-bottom: 40px;
+    margin-bottom: 40px;  
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.auth-title i
+{
+    font-size: 35px;
+    animation: greeting 4s ease-in-out infinite ;
 }
 
 .auth-tabs
@@ -89,7 +98,7 @@
 .auth-forms
 {
     padding: 35px;
-    background: #fff;
+    background: #ffffff73;
     border-radius: 20px;
     margin-bottom: 70px;
 }
@@ -123,9 +132,17 @@
     border-radius: 10px;
 }
 
+.login-form form div.row > input::placeholder
+{
+    color: #fff;
+    font-weight: 600;
+}
+
 .auth-box .login-form form div.row input:focus
 {
     border: 2px solid #fff;
+    background-color: #fff;
+    color: #000;
 }
 
 .form-btn-submit
@@ -133,6 +150,7 @@
     text-align: center;
 }
 
+/*
 .form-btn-submit button
 {
     background: #008ca29e;
@@ -141,4 +159,26 @@
     color: #fff;
     font-weight: 700;
     font-size: 20px;
+}
+
+.form-btn-submit button:hover 
+{
+
+}
+*/
+
+@keyframes greeting
+{
+    0%
+    {
+        transform: rotateZ(-30deg);
+    }    
+    50%
+    {
+        transform: rotateZ(30deg);
+    }
+    100%
+    {
+        transform: rotateZ(-30deg);
+    }
 }
