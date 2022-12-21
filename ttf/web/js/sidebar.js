@@ -1,13 +1,14 @@
-const sidebar = document.getElementById('sidebarId')
-const toggle = document.getElementById("sidetoggle")
-const searchBtn = document.getElementById("sideSearch")
-const modeText = document.getElementById("modeId")
+let arrow = document.querySelectorAll(".arrow");
+for (var i = 0; i < arrow.length; i++) {
+  arrow[i].addEventListener("click", (e)=>{
+ let arrowParent = e.target.parentElement.parentElement;//selecting main parent of arrow
+ arrowParent.classList.toggle("showMenu");
+  });
+}
 
-
-toggle.addEventListener("click" , () =>{
-    sidebar.classList.toggle("close");
-})
-
-searchBtn.addEventListener("click" , () =>{
-    sidebar.classList.remove("close");
-})
+let sidebar = document.querySelector(".sidebar");
+let sidebarBtn = document.querySelector(".ttf-side-btn");
+console.log(sidebarBtn);
+sidebarBtn.addEventListener("click", ()=>{
+  sidebar.classList.toggle("close");
+});

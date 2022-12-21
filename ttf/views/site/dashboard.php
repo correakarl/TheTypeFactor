@@ -4,101 +4,130 @@
 
 $this->title = 'Dashboard';
 $this->params['breadcrumbs'][] = $this->title;
+
 ?>
-<nav id="sidebarId" class="sidebar close">
-    <header>
-        <div class="image-text">
-            <span class="image">
-                <img src="logo.png" alt="">
-            </span>
-
-            <div class="text logo-text">
-                <span class="name">Codinglab</span>
-                <span class="profession">Web developer</span>
-            </div>
+<div class="sidebar close">
+  <div class="logo-details">
+    <i class='bx bx-chevron-right ttf-side-btn' ></i>
+    <i class='bx bxl-c-plus-plus ttf-side-log'></i>
+    <span class="logo_name">CodingLab</span>
+  </div>
+  <ul class="nav-links">
+    <li>
+      <a href="#">
+        <i class='bx bx-grid-alt' ></i>
+        <span class="link_name">Dashboard</span>
+      </a>
+      <ul class="sub-menu blank">
+        <li><a class="link_name" href="#">Category</a></li>
+      </ul>
+    </li>
+    <li>
+      <div class="iocn-link">
+        <a href="#">
+          <i class='bx bx-collection' ></i>
+          <span class="link_name">Category</span>
+        </a>
+        <i class='bx bxs-chevron-down arrow' ></i>
+      </div>
+      <ul class="sub-menu">
+        <li><a class="link_name" href="#">Category</a></li>
+        <li><a href="#">HTML & CSS</a></li>
+        <li><a href="#">JavaScript</a></li>
+        <li><a href="#">PHP & MySQL</a></li>
+      </ul>
+    </li>
+    <li>
+      <div class="iocn-link">
+        <a href="#">
+          <i class='bx bx-book-alt' ></i>
+          <span class="link_name">Posts</span>
+        </a>
+        <i class='bx bxs-chevron-down arrow' ></i>
+      </div>
+      <ul class="sub-menu">
+        <li><a class="link_name" href="#">Posts</a></li>
+        <li><a href="#">Web Design</a></li>
+        <li><a href="#">Login Form</a></li>
+        <li><a href="#">Card Design</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">
+        <i class='bx bx-pie-chart-alt-2' ></i>
+        <span class="link_name">Analytics</span>
+      </a>
+      <ul class="sub-menu blank">
+        <li><a class="link_name" href="#">Analytics</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">
+        <i class='bx bx-line-chart' ></i>
+        <span class="link_name">Chart</span>
+      </a>
+      <ul class="sub-menu blank">
+        <li><a class="link_name" href="#">Chart</a></li>
+      </ul>
+    </li>
+    <li>
+      <div class="iocn-link">
+        <a href="#">
+          <i class='bx bx-plug' ></i>
+          <span class="link_name">Plugins</span>
+        </a>
+        <i class='bx bxs-chevron-down arrow' ></i>
+      </div>
+      <ul class="sub-menu">
+        <li><a class="link_name" href="#">Plugins</a></li>
+        <li><a href="#">UI Face</a></li>
+        <li><a href="#">Pigments</a></li>
+        <li><a href="#">Box Icons</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">
+        <i class='bx bx-compass' ></i>
+        <span class="link_name">Explore</span>
+      </a>
+      <ul class="sub-menu blank">
+        <li><a class="link_name" href="#">Explore</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">
+        <i class='bx bx-history'></i>
+        <span class="link_name">History</span>
+      </a>
+      <ul class="sub-menu blank">
+        <li><a class="link_name" href="#">History</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">
+        <i class='bx bx-cog' ></i>
+        <span class="link_name">Setting</span>
+      </a>
+      <ul class="sub-menu blank">
+        <li><a class="link_name" href="#">Setting</a></li>
+      </ul>
+    </li>
+    <li>
+      <div class="profile-details">
+        <div class="profile-content">
+          <img src="image/profile.jpg" alt="profileImg">
         </div>
-
-        <i id="sidetoggle" class='bx bx-chevron-right toggle'></i>
-    </header>
-
-    <div class="menu-bar">
-        <div class="menu">
-
-            <li id="sideSearch" class="search-box">
-                <i class='bx bx-search icon'></i>
-                <input type="text" placeholder="Search...">
-            </li>
-
-            <ul class="menu-links">
-                <li class="nav-link">
-                    <a href="#">
-                        <i class='bx bx-home-alt icon' ></i>
-                        <span class="text nav-text">Dashboard</span>
-                    </a>
-                </li>
-
-                <li class="nav-link">
-                    <a href="#">
-                        <i class='bx bx-bar-chart-alt-2 icon' ></i>
-                        <span class="text nav-text">Revenue</span>
-                    </a>
-                </li>
-
-                <li class="nav-link">
-                    <a href="#">
-                        <i class='bx bx-bell icon'></i>
-                        <span class="text nav-text">Notifications</span>
-                    </a>
-                </li>
-
-                <li class="nav-link">
-                    <a href="#">
-                        <i class='bx bx-pie-chart-alt icon' ></i>
-                        <span class="text nav-text">Analytics</span>
-                    </a>
-                </li>
-
-                <li class="nav-link">
-                    <a href="#">
-                        <i class='bx bx-heart icon' ></i>
-                        <span class="text nav-text">Likes</span>
-                    </a>
-                </li>
-
-                <li class="nav-link">
-                    <a href="#">
-                        <i class='bx bx-wallet icon' ></i>
-                        <span class="text nav-text">Wallets</span>
-                    </a>
-                </li>
-
-            </ul>
+        <div class="name-job">
+          <div class="profile_name">Prem Shahi</div>
+          <div class="job">Web Desginer</div>
         </div>
-
-        <div class="bottom-content">
-            <li class="">
-                <a href="#">
-                    <i class='bx bx-log-out icon' ></i>
-                    <span class="text nav-text">Logout</span>
-                </a>
-            </li>
-
-            <li class="mode">
-                <div class="sun-moon">
-                    <i class='bx bx-moon icon moon'></i>
-                    <i class='bx bx-sun icon sun'></i>
-                </div>
-                <span id="modeId" class="mode-text text">Dark mode</span>
-
-                <div class="toggle-switch">
-                    <span class="switch"></span>
-                </div>
-            </li>
-                
-        </div>
-    </div>
-
-</nav>
-<section class="home">
-    <h1 class="display-4">DASHBOARD TYPEFACTOR</h1>
+        <i class='bx bx-log-out' ></i>
+      </div>
+    </li>
+  </ul>
+</div>
+<section class="home-section">
+  <div class="home-content">
+    <span class="text">Drop Down Sidebar</span>
+  </div>
 </section>
