@@ -46,7 +46,7 @@
 }
 .sidebar .nav-links{
   height: 100%;
-  padding: 30px 0 150px 0;
+  padding: 0;
   overflow: auto;
 }
 .sidebar.close .nav-links{
@@ -172,6 +172,10 @@
 .sidebar.close ~ .dashboard-section{
   left: 78px;
   width: calc(100% - 78px);
+}
+.left-move
+{
+  margin-left: 285px !important;
 }
 .dashboard-content{
   width: 100%;
