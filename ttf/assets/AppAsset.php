@@ -20,14 +20,25 @@ class AppAsset extends AssetBundle
     public $basePath = '@webroot';
     public $baseUrl = '@web';
     public $css = [
+        'libs/fontawesome-free-6/css/all.min.css',
         'css/site.css',
-        'css/prueba1.css',
+        'css/custom1.css',
         'css/header.css',
-        'css/homepage.css',
         'css/footer.css',
+        'css/home/homepage.css',
+        'css/home/banner.css',
+        'css/home/solutions.css',
+        'css/home/clients.css',
+        'css/home/testimonials.css',
+        'css/home/services.css',
+        'css/auth/auth.css',
+        'css/dashboard/sidebar.css',
     ];
     public $js = [
-        'js/main.js'
+        'js/main.js',
+        'js/tabs.js',
+        'js/authicon.js',
+        'js/sidebar.js',
     ];
     public $depends = [
         'yii\web\YiiAsset',

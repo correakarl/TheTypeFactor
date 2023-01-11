@@ -10,39 +10,95 @@ use yii\bootstrap5\Html;
 $this->title = 'Login';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
+<div class="auth-back">
+
+</div>
 <div class="site-login">
-    <h1><?= Html::encode($this->title) ?></h1>
 
-    <p>Please fill out the following fields to login:</p>
+<div class="row-primary auth-title" style="">
+    <h2>Bienvenido</h2> <i class="fa-regular fa-hand"></i>
+</div>
 
-    <?php $form = ActiveForm::begin([
-        'id' => 'login-form',
-        'layout' => 'horizontal',
-        'fieldConfig' => [
-            'template' => "{label}\n{input}\n{error}",
-            'labelOptions' => ['class' => 'col-lg-1 col-form-label mr-lg-3'],
-            'inputOptions' => ['class' => 'col-lg-3 form-control'],
-            'errorOptions' => ['class' => 'col-lg-7 invalid-feedback'],
-        ],
-    ]); ?>
+<div class="auth-box">
 
-        <?= $form->field($model, 'username')->textInput(['autofocus' => true]) ?>
+    <div class="auth-tabs">
+        <div id="tabLog" class="login-tab show">
+            <h3>Inicia Sesión</h3>
+            <button id="form1"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+        <div id="tabReg" class="register-tab">
+            <h3>Regístrate</h3>
+            <button id="form2"><i class="fa-solid fa-chevron-left"></i></button>
+        </div>
+    </div>
 
-        <?= $form->field($model, 'password')->passwordInput() ?>
+    
 
-        <?= $form->field($model, 'rememberMe')->checkbox([
-            'template' => "<div class=\"offset-lg-1 col-lg-3 custom-control custom-checkbox\">{input} {label}</div>\n<div class=\"col-lg-8\">{error}</div>",
-        ]) ?>
+    <div class="auth-forms">
+        <div class="auth-icon">
+            <i id="authDoor" class="fa-solid fa-door-closed"></i>
+        </div>
+        
+        <div id="cont1" class="login-form active">
+            <?php $form = ActiveForm::begin([
+            'id' => 'login-form',
+            'layout' => 'horizontal',
+            'fieldConfig' => [
+                'template' => "{input}\n{error}",
+                
+                'inputOptions' => ['class' => 'auth-control auth-input-area'],
+                'errorOptions' => ['class' => 'col-lg-7 invalid-feedback'],
+            ],
+            ]); ?>
+                <i class="fa-solid fa-user"></i>
+                <?= $form->field($model, 'username')->textInput(['autofocus' => true, 'placeholder' => 'Usuario o Email...']) ?>
+                <i class="fa-solid fa-key"></i>
+                <?= $form->field($model, 'password')->passwordInput(['placeholder' => 'Contraseña...']) ?>
 
-        <div class="form-group">
-            <div class="offset-lg-1 col-lg-11">
-                <?= Html::submitButton('Login', ['class' => 'btn btn-primary', 'name' => 'login-button']) ?>
-            </div>
+                <?= $form->field($model, 'rememberMe')->checkbox([
+                    'template' => "<div class=\"custom-control custom-checkbox\">{input} {label}</div>\n<div class=\"\">{error}</div>",
+                ]) ?>
+
+                <div class="form-group ">
+                    <div class="form-btn-submit">
+                        <?= Html::submitButton('Ingresar', ['class' => 'btn ttf-btn-primary', 'name' => 'login-button']) ?>
+                    </div>
+                </div>
+
+            <?php ActiveForm::end(); ?>
         </div>
 
-    <?php ActiveForm::end(); ?>
+        <div id="cont2" class="register-form">
+            <?php $form = ActiveForm::begin([
+            'id' => 'register-form',
+            'layout' => 'horizontal',
+            'fieldConfig' => [
+                'template' => "{input}\n{error}",
+                'inputOptions' => ['class' => 'auth-control'],
+                'errorOptions' => ['class' => 'col-lg-7 invalid-feedback'],
+            ],
+            ]); ?>
+                <?= $form->field($model, 'username')->textInput(['autofocus' => true]) ?>
+                
+                <?= $form->field($model, 'password')->passwordInput( ) ?>
 
-    <div class="offset-lg-1" style="color:#999;">
+                <?= $form->field($model, 'rememberMe')->checkbox([
+                    'template' => "<div class=\"custom-control custom-checkbox\">{input} {label}</div>\n<div class=\"\">{error}</div>",
+                ]) ?>
+
+                <div class="form-group">
+                    <div class="form-btn-submit">
+                        <?= Html::submitButton('register', ['class' => 'btn ttf-btn-primary', 'name' => 'register-button']) ?>
+                    </div>
+                </div>
+
+            <?php ActiveForm::end(); ?>
+        </div>
+    </div>
+
+</div>
+
+    <div class="" style="color:#fff; text-align: center;">
         You may login with <strong>admin/admin</strong> or <strong>demo/demo</strong>.<br>
         To modify the username/password, please check out the code <code>app\models\User::$users</code>.
     </div>

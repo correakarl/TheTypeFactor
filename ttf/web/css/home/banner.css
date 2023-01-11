@@ -1,0 +1,106 @@
+.banner-index
+{
+    position: relative;
+    min-height: calc(100vh - 57px);
+    background: #9d9d9c8f;
+    display: flex;
+}
+
+.banner-back1,
+.banner-back2
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.banner-back2
+{
+    background-color: #008ca2;
+    clip-path: polygon(0 0, 0% 100%, 60% 100%);
+}
+
+.banner-about
+{
+    width: 400px;
+    height: 400px;
+    background-color: #ffffff4d;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    flex-direction: column;
+    margin-bottom: 110px;
+    margin-left: 60px;
+    padding: 25px 0 25px 35px;
+}
+
+.banner-about h1
+{
+    font-size: 3.9rem;
+    color: #000;
+}
+/*
+.banner-about button
+{
+    background-color: #fff0;
+    color: #fff;
+    border-radius: 35px;
+    border: 3px solid #fff;
+    padding: 10px 25px;
+    transition: 1s;
+}
+
+.banner-about button:hover
+{
+    background-color: #ffffff;
+    color: #fff;
+    border-radius: 35px;
+    border: 3px solid #fff;
+    padding: 10px 25px;
+}
+
+.banner-about button a
+{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 1s;
+}
+
+.banner-about button:hover a
+{
+    color: #008ca2;
+}
+*/
+.banner-index .row-primary
+{
+    z-index: 1;
+}
+
+.banner-index .about-bar
+{
+    border: 5px solid #fff;
+    background-color: #008ca2;
+    border-radius: 20px;
+}
+
+.banner-index .about-bar ul
+{
+    margin: 0;
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 5px;
+}
+
+.banner-index .about-bar ul li a
+{
+    color: #fff;
+    font-weight: 700;
+}

@@ -145,4 +145,14 @@ class SiteController extends Controller
     {
         return $this->render('blog');
     }
+
+    /**
+     * Displays dashboard page.
+     *
+     * @return string
+     */
+    public function actionDashboard()
+    {
+        return $this->render('dashboard');
+    }
 }

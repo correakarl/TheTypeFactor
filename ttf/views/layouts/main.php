@@ -24,6 +24,7 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
 <html lang="<?= Yii::$app->language ?>" class="h-100">
 <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
 </head>
@@ -42,8 +43,8 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
             echo Nav::widget([
                 'options' => ['class' => 'navbar-nav'],
                 'items' => [
-                    ['label' => 'Home', 'url' => ['/site/index']],
                     ['label' => 'Nosotros', 'url' => ['/site/about']],
+                    ['label' => 'dashboard', 'url' => ['/site/dashboard']],
                     ['label' => 'Contacto', 'url' => ['/site/contact']],
                     ['label' => 'Servicios', 'url' => ['/site/services']],
                     ['label' => 'Blog', 'url' => ['/site/blog']],
@@ -52,7 +53,7 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
                         : '<li class="nav-item">'
                             . Html::beginForm(['/site/logout'])
                             . Html::submitButton(
-                                'Logout (' . Yii::$app->user->identity->username . ')',
+                                'Logout',
                                 ['class' => 'nav-link btn btn-link logout btn-dark']
                             )
                             . Html::endForm()
@@ -67,17 +68,26 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
 </header>
 
 <main id="main" class="flex-shrink-0" role="main">
-    <div class="">
-        <?php if (!empty($this->params['breadcrumbs'])): ?>
-            <?= Breadcrumbs::widget(['links' => $this->params['breadcrumbs']]) ?>
-        <?php endif ?>
-        <?= Alert::widget() ?>
+    <div class="main-content">
+        <div id="breadcumbTtf" class="row-breadcumb">
+            <?php if (!empty($this->params['breadcrumbs'])): ?>
+                <?= Breadcrumbs::widget(['links' => $this->params['breadcrumbs']]) ?>
+            <?php endif ?>
+            <?= Alert::widget() ?>
+        </div>
+        
         <?= $content ?>
     </div>
 </main>
 
 <footer id="footer" class="">
     <section class="footer-links">
+        <div class="footer-back3">    
+        </div>
+        <div class="footer-back1">
+        </div>
+        <div class="footer-back2">    
+        </div>
         <div class="row-primary">
             <div class="footer-socials">
                 <h2>Contacto</h2>
@@ -96,23 +106,20 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
             </div>
             <div class="footer-links1">
                 <h3>servicios</h3>
-                <a href="#">Lorem ipsum</a>
-                <a href="#">Lorem ipsum</a>
+
+
             </div>
             <div class="footer-links2">
                 <h3>Links</h3>
-                <a href="#">Lorem ipsum</a>
-                <a href="#">Lorem ipsum</a>
+
             </div>
             <div class="footer-links3">
                 <h3>Nosotros</h3>
-                <a href="#">Lorem ipsum</a>
-                <a href="#">Lorem ipsum</a>
+
             </div>
             <div class="footer-links4">
                 <h3>Blog</h3>
-                <a href="#">Lorem ipsum</a>
-                <a href="#">Lorem ipsum</a>
+
             </div>
             <p class="footer-links-copy"><i class="fa-solid fa-circle"></i>¿como contratas nuestro servicio?</p>
         </div>
